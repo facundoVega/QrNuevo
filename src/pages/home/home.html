@@ -1,17 +1,41 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-header class="cabeceraContact">
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-toolbar color="grey" class="cabeceraContact">
+
+      <ion-buttons>
+
+      <span class="pagina">Lector QR</span>
+
+      </ion-buttons>
+    
+  
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" class="menu" (click)="cerrarSesion()" >
+          <ion-icon ios="ios-power" md="md-power"></ion-icon>
+    </button>
+  </ion-buttons >
+  
+  </ion-toolbar>
+ </ion-header>
+<ion-content class="contenido" no-bounce>
+      <div class="verticalHome">
+        <div class="saludoHome">
+          <h1 class="elSaludoHome">Carga de cr&eacute;dito</h1>
+        </div>
+         
+          <div>
+              <h3 class="instruccionHome">Presione el boton &#34;cargar&#34; para cargar cr&eacute;dito</h3>
+              </div>
+     
+           <button ion-button class="bottonHome" outline (click)="scan()" >
+        
+             Cargar
+            </button>
+            <h1 style="color:red;"> {{mensaje}}</h1>
+            <div class="pieHome">
+                <h3 class="instruccion2Home">Enfoque bien la c&aacute;mara para un &oacute;ptimo funcionamiento.</h3>
+                </div>
+               
+      </div>
+ 
 </ion-content>

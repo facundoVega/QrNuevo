@@ -1,17 +1,27 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+   
+  <ion-toolbar color="grey">
+   
+      <span class="pagina">Cr&eacute;ditos</span>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" class="menu" (click)="cerrarSesion()" >
+          <ion-icon ios="ios-power" md="md-power"></ion-icon>
+    </button>
+  </ion-buttons>
+  
+  </ion-toolbar>
+ 
+ </ion-header>
+<ion-content class="contenido" no-bounce>
+      <div class="verticalHome">
+        <h2 class="tituloContact">  Cr&eacute;dito total:</h2>
+        <h2 class="valorContact"> {{valorTotal}}</h2>
+        <h2 class="tituloContact">  Cr&eacute;dito cargado:</h2>
+        <h2 class="valorContact"> {{valor}}</h2>
+        <button ion-button class="botonContact" (click)="irACargar()" color="amarillo">
+          Hacer otra carga
+        </button>
+      </div>
+      
 </ion-content>

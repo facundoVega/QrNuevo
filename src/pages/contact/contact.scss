@@ -1,3 +1,62 @@
 page-contact {
+    @import url('https://fonts.googleapis.com/css?family=Russo+One');
+    @import url('https://fonts.googleapis.com/css?family=Teko');
+    ion-content.contenido{
+        width:100%;
+        height: 100%;
+        
+        
+     overflow: hidden !important;
+     
+    }
+    
+    .verticalHome
+    {
+        width:100%;
+        height: 100%;
+        
+       background-color:#1b1b1b;
+       
+       display:flex;
+        flex-direction:column;
+        text-align: center;
+        align-items: center;
+       position:relative;
+       padding-top:7%;
+    }
+    .pagina , .menu
+    {
+        color: #fff;
+        font-family: Audiowide;
+        font-weight: normal;
+        font-size:2em;
+    
+    }
+    .menu
+    {
+        font-size:1em!important;
+    }
+    .pagina
+    {
+        margin-left:35%!important;
+    }
+    .tituloContact
+    {
+        font-size:2.5em;
+        font-family: 'Russo One', sans-serif;
+        color: #FFbb00;
+    }
+    .valorContact
+    {
+        font-size:7em;
+        color: #dbdbdb;
+        font-family: 'Teko', sans-serif;    
+    }
 
+    .botonContact
+    {
+        width:60%;
+        padding:10%;
+        color: #873C00;
+    }
 }
